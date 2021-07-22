@@ -1,0 +1,52 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+}
+
+a{
+  text-decoration: none;
+}
+
+.content{
+  height: 100%;
+}
+
+.navbar{
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #071e3d;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.navbar::after {
+  content: "";
+  background: url("img/download.jfif");
+  opacity: 0.1;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;   
+}
+
+.navbar a{
+  color: white;
+  width: 100%;
+  margin-top: 50%;
+  margin-bottom: 50%;
+  padding: 10px;
+  text-decoration: none;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 25px;
+  display: block;
+  
+}
+
+.navbar a:hover{
+  color: #21e6c1;
+  font-size: 25.5px;
+}
