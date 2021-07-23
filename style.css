@@ -1,111 +1,49 @@
-*{
-  box-sizing: border-box;
+body{
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
 a{
   text-decoration: none;
 }
 
+.navbarlink svg{
+  margin: 0 , 1.5em;
+  fill: #cefff1;
+}
+
 .navbar{
-  height: 100%;
-  width: 200px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  background-color: #071e3d;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  transform-origin: left;
-  transform: scalex(0.25);
-  transition: transform 200ms ease-out;
-}
-
-.navbar:hover{
-  transform: scalex(1);
-}
-
-.navbar:hover a{
-  display:  block;
-  transition: display 600ms ease-in;
-}
-
-.arrow{
-  position: absolute;
-  font-size: 50px ;
-  font-weight: bolder;
-  color: #21e6c1;
-  bottom: 48vh;
-  margin-left: 10px;
-  transform : scalex(4);
-  transform-origin: left;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  transition: transform 200ms ease-in-out;
-  transition-delay: 200ms;
-  pointer-events: none
-}
-
-.navbar:hover .arrow{
-  display:  none;
-}
-
-.navbarlinks{
-  
-  color: rgb(255, 255, 255);
-  width: 10%;
-  margin-top: 50%;
-  margin-bottom: 50%;
-  padding: 10px;
-  text-decoration: none;
-  font-family:Verdana, Geneva, Tahoma, sans-serif ;
-  font-size: 25px;
-  display: block;
-  position: relative;
-  display: none; 
-}
-
-.navbar a:hover{
-  color: #21e6c1;
-}
-
-.navbarlinks::after {
-  content: " ";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 600%;
-  height: 3px;
-  background: #21e6c1;
-  transform: scalex(0);
-  transform-origin: left;
-  transition: transform 100ms ease-in-out;
-}
-
-.navbarlinks:hover::after{
-  transform: scalex(1);
-  transform-origin: right;
-}
-
-.navbarlinks::before {
-  content: " ";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 3px;
-  height: 100%;
-  background: #21e6c1;
-  transform: scaley(0);
-  transform-origin: top;
-  transition: transform 100ms ease-in-out;
-}
-
-.navbarlinks:hover::before{
-  transform: scaley(1);
-  transform-origin: bottom;
-}
-
-.content{
-  width: 80%;
-  float: left;
+  list-style: none;
+  width: 3em;
   height: 100vh;
-  margin-left: 50px ;
+  padding: 0.5em;
+  position: fixed;
+  background-color: #a56cc1;
+  display: flex;
+  flex-direction: column;
+}
+
+.linktext{
+  margin-left: 1em;
+  float: right;
+  display: none;
+  font-size: 20px;
+  color: aliceblue;
+}
+
+.navbarlink{
+  display: flex;
+  padding-bottom: 3em;
+  align-items: center;
+}
+.navbarlink:hover{
+  background-color: #a56cc1;
+
+}
+.navbar:hover{
+  width: 10em;
+}
+.navbar:hover .linktext{
+  display: inline;
+ vertical-align: middle;
 }
