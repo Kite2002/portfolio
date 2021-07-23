@@ -7,9 +7,7 @@ a{
   text-decoration: none;
 }
 
-.content{
-  height: 100%;
-}
+
 
 .navbar{
   height: 100%;
@@ -19,34 +17,97 @@ a{
   left: 0;
   background-color: #071e3d;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transform-origin: left;
+  transform: scalex(0.25);
+  transition: transform 200ms ease-out;
 }
 
-.navbar::after {
-  content: "";
-  background: url("img/download.jfif");
-  opacity: 0.1;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  position: absolute;
-  z-index: -1;   
+.navbar:hover{
+  transform: scalex(1);
 }
-
 .navbar a{
+  display: none;
+  transition: display 200ms ease-in;
+}
+.navbar:hover a{
+  display:  block;
+}
+
+.navbar:hover .arrow{
+  display:  none;
+  
+}
+
+.navbarlinks{
   color: white;
   width: 100%;
   margin-top: 50%;
   margin-bottom: 50%;
   padding: 10px;
   text-decoration: none;
-  font-family: 'Times New Roman', Times, serif;
+  font-family:Verdana, Geneva, Tahoma, sans-serif ;
   font-size: 25px;
   display: block;
+  position: relative;
   
+}
+.navbarlinks::after {
+  content: " ";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 80%;
+  height: 3px;
+  background: #21e6c1;
+  transform: scalex(0);
+  transform-origin: left;
+  transition: transform 200ms ease-in-out;
+}
+
+.navbarlinks:hover::after{
+  transform: scalex(1);
+  transform-origin: right;
+}
+
+.navbarlinks::before {
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 3px;
+  height: 100%;
+  background: #21e6c1;
+  transform: scaley(0);
+  transform-origin: top;
+  transition: transform 200ms ease-in-out;
+}
+
+.navbarlinks:hover::before{
+  transform: scaley(1);
+  transform-origin: bottom;
 }
 
 .navbar a:hover{
   color: #21e6c1;
-  font-size: 25.5px;
+}
+
+.content{
+  width: 80%;
+  float: left;
+  height: 100vh;
+  margin-left: 50px ;
+}
+
+.arrow{
+  position: absolute;
+  font-size: 50px ;
+  font-weight: bolder;
+  color: #21e6c1;
+  bottom: 48vh;
+  margin-left: 10px;
+  transform : scalex(4);
+  transform-origin: left;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  transition: transform 200ms ease-in-out;
+  transition-delay: 200ms;
 }
