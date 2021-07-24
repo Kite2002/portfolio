@@ -201,11 +201,11 @@ a{
   
   #Home, #About , #Projects , #Hobbies , #contact{
     margin-left: 0;
+    padding-bottom: 5rem;
   }
 
-  #Home, #About , #Projects , #Hobbies , #contact{
-    margin-left: 0;
-    padding-bottom: 5rem;
+  #About .about-content{
+    padding: 15px;
   }
 }
 /* big screen size */
