@@ -94,7 +94,7 @@ a{
 
 #Home{
   background-color: #16af93;
-  background-image: url("../Images/home.jpg");
+  background-image: url("Images/home.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -117,7 +117,7 @@ a{
 
 #About{
   background-color: #278ea5;
-  background-image: url("../Images/about.jpg");
+  background-image: url("Images/about.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -149,7 +149,7 @@ a{
 }
 
 .about-image{
-  background-image: url("../Images/me.jpg");
+  background-image: url("Images/me.jpg");
   background-position: center center;
   background-size: cover;
   margin-left:10px;
