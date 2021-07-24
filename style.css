@@ -152,7 +152,6 @@ a{
   background-image: url("Images/me.jpg");
   background-position: center center;
   background-size: cover;
-  margin-left:10px;
   border-radius: 50%;
   height: 20em;
   width: 20em;
@@ -208,6 +207,7 @@ a{
   #About .about-content{
     padding: 15px;
     flex-direction: column;
+    text-align: center;
   }
   #About span{
     font-size: 130%;
