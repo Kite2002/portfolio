@@ -125,6 +125,7 @@ a{
   align-items: center;
   justify-content: center;
   color: antiquewhite;
+  width: 100%;
 }
 #About span{
   font-size: 100%;
