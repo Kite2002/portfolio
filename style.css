@@ -31,7 +31,7 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-  background: #21e6c1;
+  background: antiquewhite;
   border-radius: 5px;
 }
 
@@ -53,6 +53,7 @@ a{
   background-color: #071e3d;
   display: flex;
   transition: width 100ms ease;
+  border-right: 2px solid #96ffec;
 }
 
 .linktext{
@@ -77,11 +78,11 @@ a{
 
 }
 .navbarlink:hover svg{
-  fill: #21e6c1;
+  fill: #96ffec;
 }
 
 .navbarlink:hover .linktext{
-  color: #21e6c1;
+  color: #96ffec;
 }
 
 
@@ -131,7 +132,10 @@ a{
 }
 #About span{
   font-size: 100%;
-  
+} 
+
+.about-text{
+  padding: 10px;
 }
 
 #About h1{
@@ -160,7 +164,7 @@ a{
   height: 20em;
   width: 20em;
   background-color: azure;
-  border: 4px solid white;
+  border: 4px solid antiquewhite;
   margin-top: 40px;
 
 }
@@ -178,11 +182,11 @@ a{
   display: flex;
   align-items: center;
   justify-content: center;
-  color: rgb(213, 255, 235);
+  color: rgb(217, 255, 237);
 }
 
 .skill-content{
-  width: 95%;
+  width: 60%;
 }
 
 .skill-content h1{
@@ -191,17 +195,19 @@ a{
 }
 
 .skill-content span{
-  font-weight: 800;
+  
+  font-weight: 600;
 }
 
 .languages{
+  background: rgba(0,0,0, .3);
   display: flex;
   justify-content: center;
   border: 4px solid ;
   border-radius: 10px;
   padding: 20px;
   font-size: 80%;
-  margin-bottom: 40px;
+  margin-bottom: 60px;
   font-size: 90%;
 }
 
@@ -219,6 +225,7 @@ a{
 }
 
 .software{
+  background: rgba(0,0,0, .3);
   display: flex;
   width: 100%;
   justify-content: center;
@@ -234,7 +241,7 @@ a{
   justify-content: center;
   flex-direction: column;
   width: 20%;
-  margin: auto;
+  margin: 10px;
 }
 #Hobbies{
   background-color: #0a3368;
@@ -283,11 +290,19 @@ a{
   }
   #About .about-text{
     width: 90%;
+    border-bottom: 2px solid antiquewhite;
+  }
+  #Projects{
+    background-image: url("Images/project1.jpg");
   }
 
   .skill-content svg{
     height: 2.2em;
     width: 2.2em;
+  }
+
+  .skill-content{
+    width: 95%;
   }
 }
 /* big screen size */
@@ -300,7 +315,7 @@ a{
   }
 
   .navbar:hover{
-    width: 13em;
+    width: 16em;
   }
   .navbar:hover .linktext{
     display: inline;
@@ -322,10 +337,16 @@ a{
     font-size: 140%;
   }
 
+  .about-text {
+    border-right: 4px solid antiquewhite;
+    border-bottom: 4px solid antiquewhite;
+    padding: 30px;
+  }
+
   .about-image{
     height: 25em;
     width: 25em;
-    border: 10px solid white;
+    border: 4px solid antiquewhite;
     margin-left: 30PX;
   }
 
