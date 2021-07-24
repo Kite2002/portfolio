@@ -98,6 +98,7 @@ a{
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
+  background-attachment: fixed;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -121,13 +122,16 @@ a{
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
+  background-attachment: fixed;
   display: flex;
   align-items: center;
   justify-content: center;
   color: antiquewhite;
+  font-family: monospace;
 }
 #About span{
   font-size: 100%;
+  
 }
 
 #About h1{
@@ -164,9 +168,62 @@ a{
 
 
 #Projects{
-  background-color: #49a871;
+  background-color: #4e775f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(241, 212, 255);
 }
 
+.skill-content{
+  width: 95%;
+}
+
+.skill-content h1{
+  font-size: 2em;
+  font-family: monospace;
+}
+
+.languages{
+  display: flex;
+  justify-content: center;
+  border: 3px solid ;
+  border-radius: 10px;
+  padding: 20px;
+  font-size: 80%;
+}
+
+.c,.cpp,.py,.js,.htm,.css{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  width: 16%;
+}
+.skill-content span{
+  margin-top: 10px;
+  font-family: serif;
+}
+
+.software{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  border: 3px solid ;
+  border-radius: 10px;
+  padding: 20px;
+  font-size: 80%;
+}
+
+.software .s{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 20%;
+  margin: auto;
+}
 #Hobbies{
   background-color: #0a3368;
 }
@@ -215,6 +272,11 @@ a{
   #About .about-text{
     width: 90%;
   }
+
+  .skill-content svg{
+    height: 2.2em;
+    width: 2.2em;
+  }
 }
 /* big screen size */
 @media screen and (min-width: 600px) {
@@ -253,6 +315,18 @@ a{
     width: 25em;
     border: 10px solid white;
     margin-left: 30PX;
+  }
+
+  .skill-content h1{
+    font-size: 3em;
+  }
+
+  .skill-content span{
+    font-size: 160%;
+  }
+  .skill-content svg{
+    height:  5em;
+    width: 5em;
   }
   
 }
