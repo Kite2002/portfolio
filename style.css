@@ -206,6 +206,7 @@ a{
 
   #About .about-content{
     padding: 15px;
+    flex-direction: column;
   }
 }
 /* big screen size */
