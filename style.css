@@ -169,10 +169,16 @@ a{
 
 #Projects{
   background-color: #4e775f;
+  background-color: #278ea5;
+  background-image: url("Images/project.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: rgb(241, 212, 255);
+  color: rgb(213, 255, 235);
 }
 
 .skill-content{
@@ -184,13 +190,19 @@ a{
   font-family: monospace;
 }
 
+.skill-content span{
+  font-weight: 800;
+}
+
 .languages{
   display: flex;
   justify-content: center;
-  border: 3px solid ;
+  border: 4px solid ;
   border-radius: 10px;
   padding: 20px;
   font-size: 80%;
+  margin-bottom: 40px;
+  font-size: 90%;
 }
 
 .c,.cpp,.py,.js,.htm,.css{
@@ -210,10 +222,10 @@ a{
   display: flex;
   width: 100%;
   justify-content: center;
-  border: 3px solid ;
+  border: 4px solid ;
   border-radius: 10px;
   padding: 20px;
-  font-size: 80%;
+  font-size: 90%;
 }
 
 .software .s{
